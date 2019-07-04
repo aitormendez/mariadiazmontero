@@ -5162,7 +5162,7 @@ jquery-bridget@^2.0.1:
   dependencies:
     jquery ">=1.4.2 <4"
 
-"jquery@>=1.4.2 <4", jquery@^3.3.1:
+"jquery@>=1.4.2 <4", jquery@>=1.7.0, jquery@^3.3.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
   integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
@@ -5361,6 +5361,20 @@ levn@^0.3.0, levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
+
+lg-fullscreen@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/lg-fullscreen/-/lg-fullscreen-1.1.0.tgz#763d54093759ea2ea9eafd5ff1275e58422291e1"
+  integrity sha512-Sh2mZMR8QYrYNgKcCwbACs3LO8OQg6puisIMDkd4ULEJicCt0zLZ9aT4YgNhcYMYBXAU2sHwbjHJjF7TxVT3hw==
+  dependencies:
+    jquery ">=1.7.0"
+
+lightgallery@^1.6.12:
+  version "1.6.12"
+  resolved "https://registry.yarnpkg.com/lightgallery/-/lightgallery-1.6.12.tgz#c024428d1488969075dc551a85dddf905adb0e4b"
+  integrity sha512-t8hIgZc3ZvGW9pG8Bd68bXcUj7FWGewaroT7ADYo2fvQTgkqcMMLtXw9yQclS7BF0soadA0B6BN3MWOEiS2pYA==
+  dependencies:
+    jquery ">=1.7.0"
 
 limiter@^1.0.5:
   version "1.1.4"
