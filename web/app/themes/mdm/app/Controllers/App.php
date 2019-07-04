@@ -30,4 +30,38 @@ class App extends Controller
         }
         return get_the_title();
     }
+
+    public function filtros()
+    {
+        $terms = get_terms( array(
+            'taxonomy' => 'category',
+            'hide_empty' => false,
+        ) );
+
+        $parents = [];
+        $childs = [];
+        $output = '';
+
+        foreach ($terms as $term) {
+            if ($term->parent === 0 && $term->slug != 'sin-categoria') {
+                $parents[] = [
+                    'id' => $term->term_id,
+                    'nombre' => $term->name,
+                    'slug' => $term->slug,
+                ];
+            }
+        }
+
+        foreach ($parents as $parent) {
+            $group_var_name = 'group_' . $parent['slug']. 
+            $$group_var_name = 
+            foreach ($terms as $term) {
+                if ($term->parent === $parent['id'] ) {
+                    # code...
+                }
+            }
+        }
+
+        return $terms;
+    }
 }
