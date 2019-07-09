@@ -38,10 +38,6 @@ class App extends Controller
             'hide_empty' => false,
         ) );
 
-        $parents = [];
-        $childs = [];
-        $output = '';
-
         foreach ($terms as $term) {
             if ($term->parent === 0 && $term->slug != 'sin-categoria') {
                 $parents[] = [
@@ -53,15 +49,26 @@ class App extends Controller
         }
 
         foreach ($parents as $parent) {
-            $group_var_name = 'group_' . $parent['slug']. 
-            $$group_var_name = 
+            $parent_id = $parent['id'];
+            ${'padre_hijos_' . $parent_id}['padre_' . $parent_id] = $parent;
             foreach ($terms as $term) {
-                if ($term->parent === $parent['id'] ) {
-                    # code...
+                if ($term->parent === $parent_id ) {
+                    ${'childs_of_' . $parent_id}[] = [
+                        'id' => $term->term_id,
+                        'nombre' => $term->name,
+                        'slug' => $term->slug,
+                    ];
+                }
+
+                if (isset(${'childs_of_' . $parent_id})) {
+                    ${'padre_hijos_' . $parent_id}['hijos_' . $parent_id] = ${'childs_of_' . $parent_id};
                 }
             }
+
+            $output['padre_hijos_' . $parent_id] = ${'padre_hijos_' . $parent_id};
+
         }
 
-        return $terms;
+        return $output;
     }
 }
