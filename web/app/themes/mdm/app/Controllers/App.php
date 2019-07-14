@@ -33,6 +33,7 @@ class App extends Controller
 
     public function filtros()
     {
+        // ojo. no se usa en favor de un walker
         $terms = get_terms( array(
             'taxonomy' => 'category',
             'hide_empty' => false,
