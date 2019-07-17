@@ -70,6 +70,11 @@ add_action('after_setup_theme', function () {
      * @see resources/assets/styles/layouts/_tinymce.scss
      */
     add_editor_style(asset_path('styles/main.css'));
+
+    add_image_size( 'iso-300', 300, 200, true );
+    add_image_size( 'iso-600', 600, 400, true );
+    add_image_size( 'iso-900', 930, 600, true );
+
 }, 20);
 
 /**

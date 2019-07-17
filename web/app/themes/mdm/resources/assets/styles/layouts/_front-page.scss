@@ -1,0 +1,18 @@
+.home {
+  main {
+    article {
+      width: 25%;
+      position: relative;
+
+      header {
+        max-width: 100%;
+        position: absolute;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
