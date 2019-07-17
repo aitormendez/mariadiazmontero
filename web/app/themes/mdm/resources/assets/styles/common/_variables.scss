@@ -8,6 +8,7 @@ $spacer:                2rem;
 $color-principal: #002c41;
 $color-allo: #f9ae00;
 $color-azul: #0179bd;
+$color-azul-oscuro: #030f3a;
 $color-azul-claro: lighten($color-azul, 50%);
 $color-rojo: #e30000;
 $color-verde: #058011;
@@ -29,6 +30,14 @@ $ff-sans: brandy, sans-serif;
 $ff-base: $ff-sans;
 
 $trans: 0.5s;
+
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 30px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 8px;
+$hamburger-layer-color: #fff;
+$hamburger-types: (vortex);
 
 // responsive breakpoints
 @mixin phone-only {

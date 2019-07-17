@@ -1,2 +1,70 @@
-// TODO: .banner .nav li {}
-// TODO: .banner .nav a {}
+.banner {
+  .nombre {
+    position: relative;
+
+    .brand {
+      display: block;
+      position: absolute;
+      top: $pad;
+      left: $pad;
+      font-weight: 900;
+      color: #fff;
+      font-size: 1.3rem;
+
+      &:hover {
+        color: $color-azul;
+      }
+    }
+  }
+
+  #particles-js {
+    width: 100vw;
+    height: 100vw;
+    background-color: $color-azul-oscuro;
+  }
+
+  .filtros {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 3vw;
+    background-color: $color-azul;
+    z-index: 50;
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: $pad;
+
+      button {
+        margin: 0 7px 7px 0;
+        padding: 0.5em 0.5em 0.4em;
+        background-color: #fff;
+        border: none;
+        border-radius: 3px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-size: 0.7rem;
+        font-weight: 700;
+
+        &.todos {
+          background-color: #000;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    position: fixed;
+    top: $pad;
+    right: $pad;
+    z-index: 100;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
