@@ -47,13 +47,15 @@
     }
 
     .filtros {
-      padding: $pad;
+      padding: $pad $pad 0;
     }
 
     .button-group {
       display: flex;
       flex-wrap: wrap;
       margin-bottom: $pad;
+      padding-bottom: 8px;
+      border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
 
       button {
         margin: 0 7px 7px 0;
@@ -70,11 +72,46 @@
           background-color: #000;
           color: #fff;
         }
+
+        &.active {
+          background-color: $color-allo;
+          color: #fff;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &:last-child {
+        border-bottom: 1px solid #000;
+        margin-bottom: 0;
       }
     }
 
     &.abierto {
       left: 0;
+    }
+
+    #menu-principal {
+      list-style-type: none;
+      padding-left: 0;
+      margin-left: $pad;
+      margin-top: 0;
+
+      li a {
+        display: block;
+        width: calc(100vw - 40px);
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-weight: 300;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        background-color: #fff;
+        border-bottom: 1px solid #000;
+      }
     }
   }
 
