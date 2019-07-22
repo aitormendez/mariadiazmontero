@@ -1,5 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $ff-base;
+
+  .main {
+    margin-top: 100vw;
+  }
+
+  @include tablet-landscape {
+    .main {
+      margin-top: 400px;
+    }
+  }
 }
 
 a {

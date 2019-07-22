@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-07-12 18:34:58+0000\n"
+"PO-Revision-Date: 2019-07-19 10:47:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -547,7 +547,7 @@ msgstr "Menú secundario"
 
 #: wp-admin/includes/class-wp-site-health.php:1987
 msgid "The loopback request to your site completed successfully."
-msgstr "La solicitud de loopback a tu sitio se completo con éxito."
+msgstr "La solicitud de loopback a tu sitio se completo correctamente."
 
 #. translators: %d: The HTTP response code returned.
 #: wp-admin/includes/class-wp-site-health.php:1979
@@ -2780,7 +2780,7 @@ msgstr "Añadir petición de exportación de datos"
 
 #: wp-admin/includes/user.php:745
 msgid "Confirmation request initiated successfully."
-msgstr "Confirmación de petición iniciada con éxito."
+msgstr "Confirmación de petición iniciada correctamente."
 
 #: wp-admin/includes/user.php:706
 msgid "Unable to add this request. A valid email address or username must be supplied."
@@ -2788,7 +2788,7 @@ msgstr "No ha sido posible añadir esta petición. Se debe facilitar una direcci
 
 #: wp-admin/includes/user.php:667
 msgid "Confirmation request sent again successfully."
-msgstr "Petición de confirmación reenviada con éxito."
+msgstr "Petición de confirmación reenviada correctamente."
 
 #: wp-admin/includes/user.php:608 wp-admin/includes/user.php:734
 msgid "Unable to initiate confirmation request."
@@ -3548,7 +3548,7 @@ msgstr "A los usuarios nuevos se les asigna automáticamente una contraseña, qu
 #: wp-admin/includes/update.php:815
 msgctxt "plugin"
 msgid "%s was successfully deleted."
-msgstr "%s se borró con éxito."
+msgstr "%s se borró correctamente."
 
 #: wp-admin/plugins.php:440
 msgid "The search for installed plugins will search for terms in their name, description, or author."
@@ -3653,27 +3653,27 @@ msgstr "Un comentarista de WordPress"
 #: wp-admin/includes/update.php:823
 msgctxt "theme"
 msgid "%s was successfully deleted."
-msgstr "%s se borró con éxito."
+msgstr "%s se borró correctamente."
 
 #. translators: %s: Number of themes
 #: wp-admin/includes/update.php:737
 msgid "%s themes successfully updated."
-msgstr "%s temas actualizados con éxito."
+msgstr "%s temas actualizados correctamente."
 
 #. translators: %s: Number of plugins
 #: wp-admin/includes/update.php:732
 msgid "%s plugins successfully updated."
-msgstr "%s plugins actualizados con éxito."
+msgstr "%s plugins actualizados correctamente."
 
 #. translators: %s: Number of themes
 #: wp-admin/includes/update.php:725
 msgid "%s theme successfully updated."
-msgstr "%s tema actualizado con éxito."
+msgstr "%s tema actualizado correctamente."
 
 #. translators: %s: Number of plugins
 #: wp-admin/includes/update.php:720
 msgid "%s plugin successfully updated."
-msgstr "%s plugin actualizado con éxito."
+msgstr "%s plugin actualizado correctamente."
 
 #. translators: 1: URL to WordPress release notes, 2: new WordPress version
 #: wp-admin/includes/update.php:283
@@ -6214,15 +6214,15 @@ msgstr "Los siguientes plugins no lograron actualizarse:"
 
 #: wp-admin/includes/class-wp-automatic-updater.php:867
 msgid "The following translations were successfully updated:"
-msgstr "Las siguientes traducciones se actualizaron con éxito:"
+msgstr "Las siguientes traducciones se actualizaron correctamente:"
 
 #: wp-admin/includes/class-wp-automatic-updater.php:866
 msgid "The following themes were successfully updated:"
-msgstr "Los siguientes temas se actualizaron con éxito:"
+msgstr "Los siguientes temas se actualizaron correctamente:"
 
 #: wp-admin/includes/class-wp-automatic-updater.php:865
 msgid "The following plugins were successfully updated:"
-msgstr "Lo siguientes plugins se actualizaron con éxito:"
+msgstr "Lo siguientes plugins se actualizaron correctamente:"
 
 #: wp-admin/widgets.php:556
 msgid "Add Widget"
@@ -6500,7 +6500,7 @@ msgstr "Actualizando el tema: %s"
 
 #: wp-admin/includes/class-language-pack-upgrader.php:120
 msgid "Translation updated successfully."
-msgstr "Traducción actualizada con éxito."
+msgstr "Traducción actualizada correctamente."
 
 #: wp-admin/includes/class-language-pack-upgrader.php:119
 msgid "Translation update failed."
@@ -7087,7 +7087,7 @@ msgstr "Edita tu tema por defecto añadiendo o quitando elementos. Coloca cada e
 
 #: wp-admin/nav-menus.php:288
 msgid "Selected menus have been successfully deleted."
-msgstr "Los menús seleccionados se han eliminado con éxito."
+msgstr "Los menús seleccionados se han eliminado correctamente."
 
 #: wp-admin/includes/class-walker-nav-menu-edit.php:118
 msgid "sub item"
@@ -7668,7 +7668,7 @@ msgstr "<strong>No se encuentra el tema padre.</strong> Tienes que instalar el t
 #. translators: 1: theme name, 2: version
 #: wp-admin/includes/class-theme-upgrader.php:79
 msgid "Successfully installed the parent theme, <strong>%1$s %2$s</strong>."
-msgstr "Instalado con éxito el tema padre, <strong>%1$s %2$s</strong>."
+msgstr "Instalado correctamente el tema padre, <strong>%1$s %2$s</strong>."
 
 #. translators: 1: theme name, 2: version
 #: wp-admin/includes/class-theme-upgrader.php:77
@@ -8491,7 +8491,7 @@ msgstr "La tabla %s ya está optimizada."
 #. translators: %s: table name
 #: wp-admin/maint/repair.php:113
 msgid "Successfully repaired the %s table."
-msgstr "La tabla %s se ha reparado con éxito."
+msgstr "La tabla %s se ha reparado correctamente."
 
 #. translators: %s: plugin version
 #: wp-admin/update-core.php:338
@@ -9155,7 +9155,7 @@ msgstr "Actualizar la base de datos de WordPress"
 
 #: wp-admin/upgrade.php:133
 msgid "Your WordPress database has been successfully updated!"
-msgstr "¡La base de datos de WordPress se ha actualizado con éxito!"
+msgstr "¡La base de datos de WordPress se ha actualizado correctamente!"
 
 #: wp-admin/includes/class-plugin-upgrader.php:48
 #: wp-admin/includes/class-theme-upgrader.php:47
@@ -9170,7 +9170,7 @@ msgstr "Actualizar plugin"
 
 #: wp-admin/includes/class-theme-upgrader.php:54
 msgid "Theme updated successfully."
-msgstr "El tema se ha actualizado con éxito."
+msgstr "El tema se ha actualizado correctamente."
 
 #: wp-admin/includes/class-theme-upgrader.php:53
 msgid "Theme update failed."
@@ -9192,7 +9192,7 @@ msgstr "Actualizar tema"
 
 #: wp-admin/includes/class-plugin-upgrader.php:55
 msgid "Plugin updated successfully."
-msgstr "El plugin se ha actualizado con éxito."
+msgstr "El plugin se ha actualizado correctamente."
 
 #: wp-admin/export.php:180
 msgid "All content"
@@ -9961,7 +9961,7 @@ msgstr "Mostrar detalles."
 #. translators: %s: Title of an update
 #: wp-admin/includes/class-bulk-upgrader-skin.php:47
 msgid "%s updated successfully."
-msgstr "%s se ha actualizado con éxito."
+msgstr "%s se ha actualizado correctamente."
 
 #: wp-admin/includes/user.php:519
 msgid "No thanks, do not remind me again"
@@ -10095,7 +10095,7 @@ msgstr "elementos"
 
 #: wp-admin/nav-menus.php:269
 msgid "The menu has been successfully deleted."
-msgstr "El menú se ha borrado con éxito."
+msgstr "El menú se ha borrado correctamente."
 
 #: wp-admin/options-reading.php:35 wp-admin/options-reading.php:148
 #: wp-admin/options-reading.php:149 wp-admin/install.php:186
@@ -10198,7 +10198,7 @@ msgstr "Actualizar WordPress"
 #: wp-admin/includes/class-wp-automatic-updater.php:379
 #: wp-admin/update-core.php:576
 msgid "WordPress updated successfully"
-msgstr "WordPress se ha actualizado con éxito"
+msgstr "WordPress se ha actualizado correctamente"
 
 #: wp-admin/update-core.php:626 wp-admin/update-core.php:669
 msgid "WordPress Updates"
@@ -10812,7 +10812,7 @@ msgstr "Elige el plugin a editar:"
 #: wp-admin/includes/ajax-actions.php:4447 wp-admin/theme-editor.php:189
 #: wp-admin/plugin-editor.php:183
 msgid "File edited successfully."
-msgstr "Archivo editado con éxito."
+msgstr "Archivo editado correctamente."
 
 #: wp-admin/includes/file.php:471 wp-admin/plugin-editor.php:115
 msgid "Files of this type are not editable."
@@ -12285,7 +12285,7 @@ msgstr "No ha sido posible crear una imagen nueva."
 
 #: wp-admin/includes/image-edit.php:734
 msgid "Image restored successfully."
-msgstr "Imagen restaurada con éxito."
+msgstr "Imagen restaurada correctamente."
 
 #: wp-admin/includes/image-edit.php:732
 msgid "Image metadata is inconsistent."
@@ -12724,7 +12724,7 @@ msgstr "WordPress está en la última versión."
 
 #: wp-admin/includes/class-theme-upgrader.php:70
 msgid "Theme installed successfully."
-msgstr "El tema se ha instalado con éxito."
+msgstr "El tema se ha instalado correctamente."
 
 #: wp-admin/includes/class-theme-upgrader.php:67
 msgid "Installing the theme&#8230;"
@@ -12744,7 +12744,7 @@ msgstr "Tienes la última versión del tema."
 
 #: wp-admin/includes/class-plugin-upgrader.php:72
 msgid "Plugin installed successfully."
-msgstr "Plugin instalado con éxito."
+msgstr "Plugin instalado correctamente."
 
 #: wp-admin/includes/class-plugin-upgrader.php:69
 msgid "Installing the plugin&#8230;"

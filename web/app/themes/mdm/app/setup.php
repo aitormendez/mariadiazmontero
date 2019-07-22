@@ -135,3 +135,12 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+
+
+
+add_action('pre_get_posts', function($query) {
+if ($query->is_front_page() && $query->is_main_query()) {
+    $query->set('nopaging', true);
+    }
+});

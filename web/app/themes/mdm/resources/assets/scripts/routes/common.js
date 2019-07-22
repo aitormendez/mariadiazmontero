@@ -33,7 +33,7 @@ export default {
                         'value': 80,
                         'density': {
                             'enable': true,
-                            'value_area': 700,
+                            'value_area': 300,
                         },
                     },
                     'color': {
@@ -78,14 +78,14 @@ export default {
                     },
                     'move': {
                         'enable': true,
-                        'speed': 1,
+                        'speed': 0.1,
                         'direction': 'none',
                         'random': false,
                         'straight': false,
-                        'out_mode': 'out',
+                        'out_mode': 'bounce',
                         'bounce': false,
                         'attract': {
-                            'enable': false,
+                            'enable': true,
                             'rotateX': 600,
                             'rotateY': 1200,
                         },
