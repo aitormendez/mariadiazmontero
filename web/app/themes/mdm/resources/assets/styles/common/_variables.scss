@@ -10,7 +10,7 @@ $color-allo: #f9ae00;
 $color-azul: #0179bd;
 $color-azul-oscuro: #030f3a;
 $color-azul-claro: lighten($color-azul, 50%);
-$color-rojo: #e30000;
+$color-rojo: #b31313;
 $color-verde: #058011;
 $gray-base: #000;
 $gray-darker: lighten($gray-base, 13.5%);
@@ -35,9 +35,9 @@ $hamburger-padding-x: 0;
 $hamburger-padding-y: 0;
 $hamburger-layer-width: 30px;
 $hamburger-layer-height: 2px;
-$hamburger-layer-spacing: 8px;
+$hamburger-layer-spacing: 6px;
 $hamburger-layer-color: #fff;
-$hamburger-types: (vortex);
+$hamburger-types: (vortex, arrow);
 
 // responsive breakpoints
 @mixin phone-only {

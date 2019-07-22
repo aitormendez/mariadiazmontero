@@ -5,11 +5,12 @@
     .brand {
       display: block;
       position: absolute;
-      top: $pad;
+      top: 25px;
       left: $pad;
       font-weight: 900;
       color: #fff;
       font-size: 1.3rem;
+      letter-spacing: 0.1em;
 
       &:hover {
         color: $color-azul;
@@ -23,15 +24,31 @@
     background-color: $color-azul-oscuro;
   }
 
-  .filtros {
+  .solapa {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100vw;
     width: 100vw;
     height: 100vh;
-    padding: 3vw;
-    background-color: $color-azul;
+    background-color: rgba(255, 255, 255, 0.445);
     z-index: 50;
+    transition: left $trans;
+
+    .epigrafe {
+      display: block;
+      width: calc(100vw - #{$pad-2});
+      margin: 75px $pad 0;
+      padding-bottom: 10px;
+      font-weight: 300;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-bottom: 1px solid #fff;
+    }
+
+    .filtros {
+      padding: $pad;
+    }
 
     .button-group {
       display: flex;
@@ -55,12 +72,16 @@
         }
       }
     }
+
+    &.abierto {
+      left: 0;
+    }
   }
 
   .hamburger {
     position: fixed;
-    top: $pad;
-    right: $pad;
+    top: $pad-2;
+    right: $pad-2;
     z-index: 100;
 
     &:focus {

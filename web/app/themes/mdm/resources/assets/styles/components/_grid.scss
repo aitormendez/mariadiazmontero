@@ -1,0 +1,30 @@
+.grid {
+  article {
+    width: 100%;
+    position: relative;
+    padding: 20px $pad $pad;
+    background-color: $color-rojo;
+    margin-bottom: $pad;
+
+    header {
+      max-width: 100%;
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: $pad;
+        font-size: 1.2rem;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+
+    img {
+      display: block;
+      width: calc(100% - #{$pad-2});
+      height: auto;
+      border-radius: 4px;
+    }
+  }
+}

@@ -8,11 +8,14 @@ export default {
   init() {
     // JavaScript to be fired on all pages
 
+    let viewportWidth = $(window).width();
+
     // hamburger js
     // ------------------------------------------------------------
 
     $('.hamburger').click(function() {
       $(this).toggleClass('is-active');
+      $('.solapa').toggleClass('abierto');
     });
 
     // Particles js
@@ -133,10 +136,6 @@ export default {
         .fail(function( ) {
             alert()
         });
-
-
-
-    console.log(particlesJS)
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
