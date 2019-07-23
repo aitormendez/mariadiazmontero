@@ -1,5 +1,6 @@
 .grid {
-  article {
+  [role="article"] {
+    display: block;
     width: 100%;
     position: relative;
     padding: 20px $pad $pad;
@@ -13,18 +14,55 @@
         margin-top: 0;
         margin-bottom: $pad;
         font-size: 1.2rem;
-      }
-
-      a {
         color: #fff;
       }
     }
 
     img {
       display: block;
-      width: calc(100% - #{$pad-2});
+      width: 100%;
       height: auto;
       border-radius: 4px;
+    }
+
+    @include tablet-portrait {
+      width: 50%;
+    }
+
+    @include tablet-landscape {
+      width: 33.333%;
+      margin-bottom: 0;
+      background-color: transparent;
+
+      header {
+        position: absolute;
+        width: calc(100% - #{$pad-2});
+        height: calc(100% - 35px);
+        padding: $pad;
+        transition: color $trans, background-color $trans;
+
+        h2 {
+          text-shadow: 0 0 6px rgba(0, 0, 0, 0.212);
+        }
+      }
+
+      img {
+        border-radius: 0;
+      }
+
+      &:hover {
+        header {
+          background-color: rgba(202, 22, 22, 0.856);
+        }
+      }
+    }
+
+    @include desktop {
+      width: 25%;
+    }
+
+    @include big-desktop {
+      width: 25%;
     }
   }
 }

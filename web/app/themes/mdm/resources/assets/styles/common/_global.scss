@@ -6,12 +6,12 @@ body {
   font-family: $ff-base;
 
   .main {
-    margin-top: 100vw;
+    margin-top: 200px;
   }
 
   @include tablet-landscape {
     .main {
-      margin-top: 400px;
+      margin-top: 320px;
     }
   }
 }
