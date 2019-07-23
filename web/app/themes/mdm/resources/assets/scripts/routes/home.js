@@ -8,6 +8,53 @@ export default {
   init() {
     // JavaScript to be fired on the home page
 
+    let viewportWidth = $(window).width();
+
+    // banner navegación
+    // ------------------------------------------------------------
+    let $banner = $('.banner');
+
+    const banner = {
+      estado: 'abierto',
+      cerrar: function() {
+        this.estado = 'cerrado';
+        $banner.addClass('cerrado');
+      },
+      abrir: function() {
+        this.estado = 'abierto';
+        $banner.removeClass('cerrado');
+      },
+    }
+
+    // detectar dirección scroll
+    let w = $(window),
+        lastY = w.scrollTop();
+
+    w.on('scroll', function() {
+      let
+          currY = w.scrollTop(),
+          currDireccion = (currY > lastY) ? 'down' : 'up';
+          if (viewportWidth > 1000) {
+            if (currY === 0 && banner.estado === 'cerrado') {
+              banner.abrir();
+            } else if (currY != 0) {
+              switch (currDireccion + ' ' + banner.estado) {
+                case 'down abierto':
+                  banner.cerrar();
+                  break;
+
+                case 'up cerrado':
+                  banner.abrir();
+                  break;
+
+                default:
+                  break;
+              }
+            }
+          }
+          lastY = currY;
+    });
+
 
     // Isotope
     // ------------------------------------------------------------
