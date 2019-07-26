@@ -32,7 +32,7 @@
       li {
         a {
           color: #fff;
-          margin-right: $pad-3;
+          margin-right: calc(20px + #{$pad});
           font-weight: 500;
           letter-spacing: 0.1em;
         }
@@ -155,22 +155,26 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 320px;
+    height: calc(19 * #{$pad});
 
-    #particles-js {
-      height: 320px;
-    }
-
-    .nav-primary {
-      position: relative;
-      display: inline-block;
-      left: 280px;
+    .brand {
       top: $pad-2;
     }
 
+    #particles-js {
+      height: calc(19 * #{$pad});
+    }
+
+    .nav-primary {
+      position: absolute;
+      display: inline-block;
+      left: calc(170px + 10vw);
+      top: calc(#{$pad} * 2.25);
+    }
+
     .solapa {
-      position: relative;
-      top: auto;
+      position: absolute;
+      top: calc(#{$pad * 6});
       left: auto;
       width: auto;
       height: auto;
@@ -178,6 +182,7 @@
 
       .epigrafe {
         width: calc(100vw - #{$pad-3});
+        margin-top: 0;
         border-bottom: none;
       }
 
@@ -224,17 +229,17 @@
 
     @include tablet-portrait {
       // interior desktop
-      height: 75px;
+      height: $pad-5;
 
       #particles-js {
-        height: 75px;
+        height: $pad-5;
       }
 
       .nav-primary {
-        position: relative;
+        position: absolute;
         display: inline-block;
-        left: 280px;
-        top: $pad-2;
+        left: calc(170px + 10vw);
+        top: calc(#{$pad} * 2.25);
       }
     }
   }

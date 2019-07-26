@@ -34,7 +34,7 @@ export default {
       let
           currY = w.scrollTop(),
           currDireccion = (currY > lastY) ? 'down' : 'up';
-          if (viewportWidth > 1000) {
+          if (viewportWidth > 700) {
             if (currY === 0 && banner.estado === 'cerrado') {
               banner.abrir();
             } else if (currY != 0) {
