@@ -1,4 +1,5 @@
 .banner {
+  width: 100%;
   overflow: hidden;
   z-index: 200;
   transition: height $trans;
@@ -18,8 +19,25 @@
     }
   }
 
-  .nav-primary {
+  > .nav-primary {
     display: none;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      li {
+        a {
+          color: #fff;
+          margin-right: $pad-3;
+          font-weight: 500;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
   }
 
   #particles-js {
@@ -100,7 +118,7 @@
       left: 0;
     }
 
-    #menu-principal {
+    ul {
       list-style-type: none;
       padding-left: 0;
       margin-left: $pad;
@@ -133,7 +151,7 @@
     }
   }
 
-  @include tablet-landscape {
+  @include tablet-portrait {
     position: fixed;
     top: 0;
     left: 0;
@@ -148,23 +166,6 @@
       display: inline-block;
       left: 280px;
       top: $pad-2;
-
-      ul {
-        display: flex;
-        list-style-type: none;
-        padding-left: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-
-        li {
-          a {
-            color: #fff;
-            margin-right: $pad-3;
-            font-weight: 500;
-            letter-spacing: 0.1em;
-          }
-        }
-      }
     }
 
     .solapa {
@@ -202,6 +203,39 @@
 
     .home &.cerrado {
       height: 75px;
+    }
+  }
+
+  body:not(.home) & {
+
+    // interior movil
+    height: 150px;
+
+    #particles-js {
+      height: 150px;
+    }
+
+    .nav-primary {
+      position: absolute;
+      display: block;
+      top: 100px;
+      left: $pad;
+    }
+
+    @include tablet-portrait {
+      // interior desktop
+      height: 75px;
+
+      #particles-js {
+        height: 75px;
+      }
+
+      .nav-primary {
+        position: relative;
+        display: inline-block;
+        left: 280px;
+        top: $pad-2;
+      }
     }
   }
 }

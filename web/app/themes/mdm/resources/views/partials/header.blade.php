@@ -1,11 +1,13 @@
 <header class="banner">
   <div id="particles-js"></div>
   <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
+
   <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-    </nav>
+    @if (has_nav_menu('primary_navigation'))
+      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
+    @endif
+  </nav>
+
   @if (is_front_page())
   <div class="solapa">
     <h3 class="epigrafe trabajos">Trabajos</h3>
@@ -36,16 +38,10 @@
     </nav>
 
   </div>
-  @else
-  <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-    </nav>
-  @endif
   <button class="hamburger hamburger--arrow" type="button">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
   </button>
+  @endif
 </header>
