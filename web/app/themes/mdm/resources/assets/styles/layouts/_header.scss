@@ -85,17 +85,19 @@
       button {
         margin: 0 7px 7px 0;
         padding: 0.5em 0.5em 0.4em;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.637);
         border: none;
         border-radius: 3px;
         text-transform: uppercase;
         letter-spacing: 0.05em;
         font-size: 0.7rem;
-        font-weight: 700;
+        font-weight: 400;
 
         &.todos {
-          background-color: #000;
-          color: #fff;
+          // background-color: #000;
+          // color: #fff;
+          font-weight: 900;
+          background-color: #fff;
         }
 
         &.active {
