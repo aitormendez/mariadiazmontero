@@ -1,0 +1,36 @@
+.page-template-p-bio {
+  .main {
+    .biopic {
+      margin-bottom: $pad-4;
+    }
+
+    .cv {
+      ul {
+        padding-left: 0;
+        list-style-type: none;
+        margin-bottom: $pad;
+
+        li {
+          display: flex;
+          margin-bottom: $pad;
+
+          .fechas {
+            flex-grow: 0;
+            flex-shrink: 0;
+            font-weight: 700;
+            font-size: 0.8rem;
+            width: calc(#{$pad} * 6);
+            letter-spacing: 0.05em;
+            line-height: 1.2rem;
+          }
+
+          .contents {
+            h4 {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
