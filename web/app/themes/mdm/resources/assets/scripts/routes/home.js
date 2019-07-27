@@ -61,9 +61,13 @@ export default {
 
     let $grid = $('.grid');
 
-    $grid.isotope({
-      // options
+
+    $('.grid').imagesLoaded( function () {
+      $grid.isotope({
+        // options
+      });
     });
+
 
     $('.filter-button-group').on( 'click', 'button', function() {
       var filterValue = $(this).attr('data-filter');
