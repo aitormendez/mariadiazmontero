@@ -1,5 +1,48 @@
-/** Search form */
-// TODO: .search-form {}
-// TODO: .search-form label {}
-// TODO: .search-form .search-field {}
-// TODO: .search-form .search-submit {}
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea,
+.uneditable-input {
+  background-color: white;
+  width: 100%;
+  border: none !important;
+  box-shadow: none;
+  outline: 0 none;
+  font-family: $ff-base;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 1em;
+
+  &:focus {
+    border: none;
+    box-shadow: none;
+    outline: 0 none;
+    background-color: $gray-dark;
+    color: white;
+  }
+}
+
+button[type="submit"] {
+  background-color: $color-verde !important;
+  border: none !important;
+  transition: background-color $trans;
+  text-transform: uppercase !important;
+  font-weight: 700;
+  letter-spacing: 0.1em !important;
+  color: #fff !important;
+
+  &:hover {
+    background-color: darken($color-verde, 10%) !important;
+  }
+}

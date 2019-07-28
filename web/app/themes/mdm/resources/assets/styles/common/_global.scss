@@ -25,6 +25,8 @@ body {
   }
 
   &:not(.home) {
+    background-color: $gray-lighter;
+
     .main {
       margin-top: 50px;
     }

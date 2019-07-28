@@ -91,7 +91,9 @@
     "wpackagist-plugin/imsanity": "*",
     "wp-sync-db/wp-sync-db-media-files": "dev-master",
     "analogmemory/wp-sync-db": "1.6",
-    "soberwp/intervention": "^1.2"
+    "soberwp/intervention": "^1.2",
+    "wpackagist-plugin/wpforms-lite": "*",
+    "wpackagist-plugin/easy-wp-smtp": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",
