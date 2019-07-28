@@ -93,7 +93,8 @@
     "analogmemory/wp-sync-db": "1.6",
     "soberwp/intervention": "^1.2",
     "wpackagist-plugin/wpforms-lite": "*",
-    "wpackagist-plugin/easy-wp-smtp": "*"
+    "wpackagist-plugin/easy-wp-smtp": "*",
+    "wpackagist-plugin/post-types-order": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",
