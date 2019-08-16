@@ -11,7 +11,7 @@
     left: $pad;
     font-weight: 900;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: 0.1em;
 
     &:hover {
@@ -161,6 +161,7 @@
 
     .brand {
       top: $pad-2;
+      font-size: 2rem;
     }
 
     #particles-js {
@@ -170,8 +171,9 @@
     .nav-primary {
       position: absolute;
       display: inline-block;
-      left: calc(170px + 10vw);
-      top: calc(#{$pad} * 2.25);
+      left: calc(300px + 10vw);
+      top: calc(#{$pad} * 2.65);
+      font-size: 1.3rem;
     }
 
     .solapa {
